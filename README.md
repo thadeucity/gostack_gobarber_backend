@@ -61,4 +61,9 @@
 
 # Next Steps
 
-1
+1 - Rotas e Controllers
+2 - Repositório de Tokens (typeORM)
+3 - Criar migration de tokens
+4 - Provides de envio de e-mail (DEV)
+5 - Registrar Providers no container
+6 - Testar Tudo!
