@@ -18,13 +18,13 @@ export default class SESMailProvider implements IMailProvider {
     this.client = nodemailer.createTransport({
       SES: new aws.SES({
         apiVersion: '2010-12-01',
+        region: 'sa-east-1',
       }),
     });
   }
 
   public async sendMail({
     to,
-    from,
     subject,
     templateData,
   }: ISendMailDTO): Promise<void> {
