@@ -5,5 +5,7 @@ coverage/
 build/
 temp/
 
+.env
+
 tmp/*
 !tmp/.gitkeep
