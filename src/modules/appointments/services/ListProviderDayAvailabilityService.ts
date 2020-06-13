@@ -52,13 +52,12 @@ class ListProviderDayAvailabilityService {
       (_, index) => index + houtStart,
     );
 
-    const currentDate = new Date(Date.now());
-
     const availability = eachHourArray.map(hour => {
-      const hasAppointmentInHour = appointments.find(
-        appointment => getHours(appointment.date) === hour,
-      );
+      const hasAppointmentInHour = appointments.find(appointment => {
+        return appointment.date.getUTCHours() === hour;
+      });
 
+      const currentDate = new Date(Date.now());
       const compareDate = new Date(year, month - 1, day, hour);
 
       return {
