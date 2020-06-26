@@ -1,5 +1,5 @@
 import { injectable, inject } from 'tsyringe';
-import { getHours, isAfter } from 'date-fns';
+import { isAfter } from 'date-fns';
 
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
