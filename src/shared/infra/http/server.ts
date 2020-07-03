@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'https://reactgobarber.victoralvarenga.com/',
+    origin: 'https://reactgobarber.victoralvarenga.com',
     optionsSuccessStatus: 200,
   }),
 );
